@@ -30,19 +30,29 @@
 
 ### Problemas comunes
 
-![an alternative text](images/problema.png)
+![Common problem](images/problema.png)
 
 ***
 
 ### Arquitectura General
 
-![an alternative text](images/platformDiagram.png)
+<img src="images/platformDiagram.png" width="70%">
 
 ***
 
-### Resultados
-
 ![](images/areas.png)
+
+---
+
+<img src="images/colaboracion.png" width="60%">
+
+---
+
+<img src="images/mapa.png" width="60%">
+
+---
+
+![](images/estadisticas.png)
 
 ---
 
@@ -52,31 +62,20 @@
     google.setOnLoadCallback(drawChart);
 function drawChart() {
     var data = new google.visualization.DataTable({"cols": [{"type": "string" ,"id": "Column 1" ,"label": "Column 1" }, {"type": "number" ,"id": "Column 2" ,"label": "Publicaciones" }], "rows" : [{"c" : [{"v": "Carvallo Vega, Juan Pablo"}, {"v": 75}]}, {"c" : [{"v": "Conci, Aura"}, {"v": 72}]}, {"c" : [{"v": "Díaz Contreras, Jessica"}, {"v": 46}]}, {"c" : [{"v": "Vanegas, Pablo"}, {"v": 42}]}, {"c" : [{"v": "Espinoza, Mauricio"}, {"v": 42}]}, {"c" : [{"v": "Saquicela, Víctor"}, {"v": 35}]}, {"c" : [{"v": "Goethals, Peter L. M"}, {"v": 34}]}, {"c" : [{"v": "Castro Riera, Carlos "}, {"v": 31}]}, {"c" : [{"v": "Torres, Maria Eugenia"}, {"v": 30}]}, {"c" : [{"v": "Veronica Mora"}, {"v": 28}]}]});
-    var options = {"hAxis":{"title":"Número de publicaciones","viewWindowMode":"explicit","viewWindow":{"min":0}},"legend":{"position":"none"},"title":"Investigadores Relevantes","width":1000,"height":600}
+    var options = {"hAxis":{"title":"Número de publicaciones","viewWindowMode":"explicit","viewWindow":{"min":0}},"legend":{"position":"none"},"title":"Investigadores con mayor número de publicaciones de la UCUENCA","width":1000,"height":600}
     var chart = new google.visualization.BarChart(document.getElementById('d58646cc-a055-47d1-8d4f-d9a17025c2d1'));
     chart.draw(data, options);
 }
 </script>
 <div id="d58646cc-a055-47d1-8d4f-d9a17025c2d1" style="width: 800px; height: 600px;"></div>
 
----
-
-![](images/colaboracion.png)
-
----
-
-![](images/estadisticas.png)
-
----
-
-![](images/mapa.png)
 
 ---
 
 ### __¿Más?__
 
 
-[![](images/redi.png)](http://redi.cedia.org.ec/)
+<a href="http://redi.cedia.org.ec/" target="blank"><img src="images/redi.png" alt=""></a>
 
 ***
 
@@ -90,6 +89,8 @@ function drawChart() {
 ***
 
 ### Trabajos Futuros
+
+
 - Mejorar procesos de extracción de datos.
 - Incluir el abstract para analizar redes de colaboración.
 - Mejorar el proceso de etiquetado.
