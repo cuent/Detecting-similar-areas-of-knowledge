@@ -1,3 +1,11 @@
+
+# Detecting-similar-areas-of-knowledge
+
+There are two presentations, the [first presentation](http://cuent.github.io/tesis/index.html#/) was used to present the work in the University of Cuenca in order to obtain the degree of computer scientist while the [second presentation](http://cuent.github.io/galardones/index.html#/) was used for a national competition in Ecuador.
+
+
+
+
 [![Issue Stats](http://issuestats.com/github/fsprojects/FsReveal/badge/issue)](http://issuestats.com/github/fsprojects/FsReveal)
 [![Issue Stats](http://issuestats.com/github/fsprojects/FsReveal/badge/pr)](http://issuestats.com/github/fsprojects/FsReveal)
 
@@ -29,5 +37,3 @@ and brings F# to the [reveal.js][revealjs] web presentation framework.
 - [@troykershaw](https://github.com/troykershaw)
 
 The default maintainer account for projects under "fsprojects" is [@fsprojectsgit](https://github.com/fsprojectsgit) - F# Community Project Incubation Space (repo management)
-# Detecting-similar-areas-of-knowledge
-Detecting similar areas of knowledge presentation of the thesis for qualification as a computer scientist in the University of Cuenca.
