@@ -19,26 +19,27 @@
 
 ***
 
-### Introducción
-
-- ¿Quién trabaja en líneas de investigación parecidas?
-- ¿Cómo se puede crear una red de investigadores de un área en común, cuando no conocemos si estas existen?
-- Obtener sus artículos, conocer revistas en las que fueron aceptados, entre otros.
-- Proyectos interinstitucionales.
-
-***
-
-### Problemas comunes
+### Problema
 
 ![Common problem](images/problema.png)
 
+' ¿Quién trabaja en líneas de investigación parecidas?
+' ¿Cómo se puede crear una red de investigadores de un área en común, cuando no conocemos si estas existen?
+' Obtener sus artículos, conocer revistas en las que fueron aceptados, entre otros.
+' Proyectos interinstitucionales.
+
+
 ***
 
-### Arquitectura General
+### Arquitectura
 
 <img src="images/platformDiagram.png" width="70%">
 
 ***
+
+#Resultados
+
+---
 
 ![](images/areas.png)
 
@@ -62,7 +63,7 @@
     google.setOnLoadCallback(drawChart);
 function drawChart() {
     var data = new google.visualization.DataTable({"cols": [{"type": "string" ,"id": "Column 1" ,"label": "Column 1" }, {"type": "number" ,"id": "Column 2" ,"label": "Publicaciones" }], "rows" : [{"c" : [{"v": "Carvallo Vega, Juan Pablo"}, {"v": 75}]}, {"c" : [{"v": "Conci, Aura"}, {"v": 72}]}, {"c" : [{"v": "Díaz Contreras, Jessica"}, {"v": 46}]}, {"c" : [{"v": "Vanegas, Pablo"}, {"v": 42}]}, {"c" : [{"v": "Espinoza, Mauricio"}, {"v": 42}]}, {"c" : [{"v": "Saquicela, Víctor"}, {"v": 35}]}, {"c" : [{"v": "Goethals, Peter L. M"}, {"v": 34}]}, {"c" : [{"v": "Castro Riera, Carlos "}, {"v": 31}]}, {"c" : [{"v": "Torres, Maria Eugenia"}, {"v": 30}]}, {"c" : [{"v": "Veronica Mora"}, {"v": 28}]}]});
-    var options = {"hAxis":{"title":"Número de publicaciones","viewWindowMode":"explicit","viewWindow":{"min":0}},"legend":{"position":"none"},"title":"Investigadores con mayor número de publicaciones de la UCUENCA","width":1000,"height":600}
+    var options = {"hAxis":{"title":"Número de publicaciones","viewWindowMode":"explicit","viewWindow":{"min":0}},"legend":{"position":"none"},"title":"Investigadores con mayor número de publicaciones en la UCUENCA","width":1000,"height":600}
     var chart = new google.visualization.BarChart(document.getElementById('d58646cc-a055-47d1-8d4f-d9a17025c2d1'));
     chart.draw(data, options);
 }
@@ -81,19 +82,17 @@ function drawChart() {
 
 ### Conclusiones
 
-- Procesos como el de desambiguación y etiquetado necesitan un trabajo mas exhaustivo, debido a que aun se tienen ciertas inconsistencias en los resultados.
-- Considerar que incluso para una persona es complicado determinar cierta información sobre un investigador o varios investigadores que pueden trabajar en conjunto. Por lo que aun es un reto a nivel computacional.
-- Además como resultado se cuenta con un repositorio centralizado y se provee el uso de estos datos a cualquier persona.
-
+* Aporte a la comunidad cientifíca nacional con información actualizada de investigadores que pueden trabajar en conjunto.
+* Cualquier persona/institución puede hacer uso de los datos almacenados en el Repositorio Central.
+* Incentivar la generación de proyectos interinstitucionales, ayuda en la asignación de recursos y generación de indicadores que pueden ser útiles para gobiernos u otras instituciones.
 
 ***
 
 ### Trabajos Futuros
 
 
-- Mejorar procesos de extracción de datos.
-- Incluir el abstract para analizar redes de colaboración.
-- Mejorar el proceso de etiquetado.
+- Mejorar procesos de extracción de datos e etiquetado.
+- Incluir abstract para analizar redes de colaboración.
 - Analizar nuevos algoritmos de clustering o otras técnicas para encontrar agrupaciones.
 
 ***
